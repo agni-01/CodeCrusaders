@@ -1,0 +1,19 @@
+/* ChromaGraph Content Styles */
+.chromagraph-active {
+  transition: filter 0.2s ease-in-out;
+}
+
+#chromagraph-inspector-tooltip {
+  position: fixed;
+  z-index: 2147483647;
+  pointer-events: none;
+  background: #0f172a;
+  border: 1px solid #38bdf8;
+  border-radius: 6px;
+  padding: 6px 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: sans-serif;
+}

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "ChromaGraph - Colorblind Assist for Web Graphs",
+  "version": "1.0.0",
+  "description": "Empowers colorblind individuals to clearly read, differentiate, and inspect colored graphs, charts, and visual data across the web using Daltonization, patterns, and color inspection.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ChromaGraph Controls"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
